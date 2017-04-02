@@ -130,5 +130,5 @@ function post()
 	$m = str_replace('.2', 'b', $m);
 	$m = str_replace('.3', 'c', $m);
 
-	redirect("/#result?t=$t&n=$n&m=$m");
+	redirect("/?t=$t&n=$n&m=$m#result");
 }
