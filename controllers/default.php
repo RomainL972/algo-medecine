@@ -4,10 +4,10 @@ function index()
 	head('Classification TNM');
 	?>
 	<h1>Classification TNM 8ème édition</h1>
-	<form action="/default/post" method="post">
+	<form>
 	<h2>T</h1>
 	<p>Taille : 
-		<select name="T1">
+		<select name="T1" id="t1">
 			<option value="1.1">≤ 1cm</option>
 			<option value="1.2">1cm et ≤ 2cm</option>
 			<option value="1.3">2cm et ≤ 3cm</option>
@@ -18,7 +18,7 @@ function index()
 		</select>
 	</p>
 	<p>Trachée-Bronches : 
-		<select name="T2">
+		<select name="T2" id="t2">
 			<option value="0">Pas d'atteinte</option>
 			<option value="2">Atélectasie/Pneumonie obstructive</option>
 			<option value="2">Atteinte bronchique sans atteinte de la carène</option>
@@ -26,7 +26,7 @@ function index()
 		</select>
 	</p>
 	<p>Médiastin : 
-		<select name="T3">
+		<select name="T3" id="t3">
 			<option value="0">Pas d'atteinte</option>
 			<option value="3">Paralysie phrénique</option>
 			<option value="4">Oesophage</option>
@@ -35,14 +35,14 @@ function index()
 		</select>
 	</p>
 	<p>Plèvre : 
-		<select name="T4">
+		<select name="T4" id="t4">
 			<option value="0">Pas d'atteinte</option>
 			<option value="2">Franchissement scissural</option>
 			<option value="3">Plèvre pariétale</option>
 		</select>
 	</p>
 	<p>Paroi : 
-		<select name="T5">
+		<select name="T5" id="t5">
 			<option value="0">Pas d'atteinte</option>
 			<option value="3">Plèvre pariétale/Paroi</option>
 			<option value="3">Apex</option>
@@ -50,7 +50,7 @@ function index()
 		</select>
 	</p>
 	<p>Nodules satellites : 
-		<select name="T6">
+		<select name="T6" id="t6">
 			<option value="0">Aucun</option>
 			<option value="3">Nodule(s) dans le même lobe</option>
 			<option value="4">Nodule(s) dans un autre lobe homolatéral</option>
@@ -59,7 +59,7 @@ function index()
 
 	<h2>Adénopathies</h1>
 	<p>
-		<select name="ntm_n">
+		<select name="ntm_n" id="n">
 			<option value="0">Absence de métastase dans les ganglions régionaux</option>
 			<option value="1">Hilaire homolatérale</option>
 			<option value="2">Médiastinale homolatérale et sous-carénaire</option>
@@ -71,7 +71,7 @@ function index()
 
 	<h2>Métastase(s)</h1>
 	<p>
-		<select name="ntm_m">
+		<select name="ntm_m" id="m">
 			<option value="0">Pas de métastase à distance</option>
 			<option value="1.1">Nodule controlatéral</option>
 			<option value="1.1">Carcinose pleurale ou péricardique</option>
@@ -80,13 +80,8 @@ function index()
 		</select>
 	</p>
 
-	<p><input type="submit" value="Résultat"></p>
-	<?php
-	extract($_GET, EXTR_SKIP);
-	if (isset($t) and isset($m) and isset($n)) {
-		echo "<p id=\"result\">T$t</p><p>N$n</p><p>M$m</p>";
-	}
-	?>
+	<p><input type="button" value="Résultat" onclick="calcul()"></p>
+	<p id="result"></p>
 
 	</form>
 
@@ -105,30 +100,5 @@ function index()
 		<li>Places de l’IRM : distinction tumeur/atélectasie - pneumopathie obstructive ; atteinte péricardique - diaphragmatique ; atteinte rachidienne - épidurite (apex pulmonaire) ; atteinte cérébrale</li>
 	</ul>
 	<?php
-}
-
-function post()
-{
-	extract($_POST, EXTR_SKIP);
-	if (!isset($T1) or !isset($T2) or !isset($T3) or !isset($T4) or !isset($T5) or !isset($T6) or !isset($ntm_n) or !isset($ntm_m)) {
-		error('Formulaire incorrect');
-	}
-	$T = compact(array('T1', 'T2', 'T3', 'T4', 'T5', 'T6'));
-	$t = 0;
-	for ($i=0; $i <= 6; $i++) { 
-		if ($T['T'.$i] > $t) {
-			$t = $T['T'.$i];
-		}
-	}
-	$n = $ntm_n;
-
-	$t = str_replace('.1', 'a', $t);
-	$t = str_replace('.2', 'b', $t);
-	$t = str_replace('.3', 'c', $t);
-
-	$m = str_replace('.1', 'a', $ntm_m);
-	$m = str_replace('.2', 'b', $m);
-	$m = str_replace('.3', 'c', $m);
-
-	redirect("/?t=$t&n=$n&m=$m#result");
+	foot();
 }
