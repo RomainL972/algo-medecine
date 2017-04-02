@@ -3,8 +3,9 @@ function index()
 {
 	head('Classification TNM');
 	?>
+	<h1>Classification TNM 8ème édition</h1>
 	<form action="/default/post" method="post">
-	<h1>T</h1>
+	<h2>T</h1>
 	<p>Taille : 
 		<select name="T1">
 			<option value="1.1">≤ 1cm</option>
@@ -55,7 +56,7 @@ function index()
 		</select>
 	</p>
 
-	<h1>Adénopathies</h1>
+	<h2>Adénopathies</h1>
 	<p>
 		<select name="ntm_n">
 			<option value="0">Absence de métastase dans les ganglions régionaux</option>
@@ -67,7 +68,7 @@ function index()
 		</select>
 	</p>
 
-	<h1>Métastase(s)</h1>
+	<h2>Métastase(s)</h1>
 	<p>
 		<select name="ntm_m">
 			<option value="0">Pas de métastase à distance</option>
