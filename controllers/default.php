@@ -81,6 +81,12 @@ function index()
 	</p>
 
 	<p><input type="submit" value="Résultat"></p>
+	<?php
+	extract($_GET, EXTR_SKIP);
+	if (isset($t) and isset($m) and isset($n)) {
+		echo "<p>T$t</p><p>N$n</p><p>M$m</p>";
+	}
+	?>
 
 	</form>
 
@@ -114,6 +120,8 @@ function post()
 			$t = $T['T'.$i];
 		}
 	}
+	$n = $ntm_n;
+
 	$t = str_replace('.1', 'a', $t);
 	$t = str_replace('.2', 'b', $t);
 	$t = str_replace('.3', 'c', $t);
@@ -122,12 +130,5 @@ function post()
 	$m = str_replace('.2', 'b', $m);
 	$m = str_replace('.3', 'c', $m);
 
-	head('Résultat');
-	?>
-	<h1>Classification TNM 8ème édition</h1>
-	<p>T<?php echo $t;?></p>
-	<p>N<?php echo $ntm_n;?></p>
-	<p>M<?php echo $m;?></p>
-	<p><a href='/'>Retour</a></p>
-	<?php
+	redirect("/?t=$t&n=$n&m=$m");
 }
