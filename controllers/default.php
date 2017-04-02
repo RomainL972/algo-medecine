@@ -84,23 +84,20 @@ function index()
 
 	</form>
 
-	<p>Remarques :
+	<p>Remarques pour le radiologue :
+	<ul>
+		<li>Protocole d’acquisition TDM pour bilan d’extension : abdomen sans injection (surrénales), thorax - abdomen - pelvis temps portal puis encéphale à 3 min.</li>
 
-	<p>Protocole d’acquisition TDM pour bilan d’extension : abdomen sans injection, thorax - abdomen - pelvis temps portal puis encéphale à 3 min.</p>
+		<li>Si nodule dans un autre lobe ou contro-latéral : analyse par nodule, souvent bénin si petit (hors miliaire), confirmation histologique si impact thérapeutique</li>
 
-	<p>Nodule dans un autre lobe ou contro-latéral : analyse par nodule, souventbénin si petit (hors miliaire), confirmation histologique si impact thérapeutique</p>
+		<li>Si hypertrophie ganglionnaire : sensibilité et spécificité limitée du scanner (TEP scan)</li>
 
-	<p>Hypertrophie ganglionnaire : sensibilité et spécificité limitée du scanner (TEP scan)</p>
+		<li>Si doute T, N ou M : choisir la catégorie inférieure pour éviter une perte de chance au patient</li>
 
-	<p>Confirmation histologique des sites métastatiques si impact thérapeutique (métastase unique ou oligo métastatique)</p>
+		<li>Noter les comorbidités, notamment cardio vasculaires et pulmonaires / noter les variantes variantes anatomiques (veines pulonaires, bronches)</li>
 
-	<p>En cas de doute T, N ou M : choisir la catégorie inférieure pour éviter une perte de chance au patient</p>
-
-	<p>Noter comorbidités, notamment cardio vasculaires et pulmonaires / noter les variantes variantes anatomiques (veines pulonaires, bronches)</p>
-
-	<p>Place du TEP scan : patient résecable et opérable ; évaluation N et M</p>
-
-	<p>Places de l’IRM : distinction tumeur/atélectasie - pneumopathie obstructive ; atteinte péricardique - diaphragmatique ; atteinte rachidienne - épidurite (apex pulmonaire) ; atteinte cérébrale</p>
+		<li>Places de l’IRM : distinction tumeur/atélectasie - pneumopathie obstructive ; atteinte péricardique - diaphragmatique ; atteinte rachidienne - épidurite (apex pulmonaire) ; atteinte cérébrale</li>
+	</ul>
 	<?php
 }
 
