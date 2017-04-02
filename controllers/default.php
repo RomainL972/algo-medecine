@@ -20,8 +20,9 @@ function index()
 	<p>Trachée-Bronches : 
 		<select name="T2">
 			<option value="0">Pas d'atteinte</option>
-			<option value="2">Pas d'atteinte carène/Atélectasie/Pneumonie obstructive</option>
-			<option value="4">Atteinte de la carène</option>
+			<option value="2">Atélectasie/Pneumonie obstructive</option>
+			<option value="2">Atteinte bronchique sans atteinte de la carène</option>
+			<option value="4">Atteinte bronchique avec atteinte de la carène</option>]
 		</select>
 	</p>
 	<p>Médiastin : 
@@ -79,7 +80,7 @@ function index()
 		</select>
 	</p>
 
-	<p><input type="submit" value="Calculer"></p>
+	<p><input type="submit" value="Résultat"></p>
 
 	</form>
 	<?php
@@ -106,10 +107,12 @@ function post()
 	$m = str_replace('.2', 'b', $m);
 	$m = str_replace('.3', 'c', $m);
 
-
+	head('Résultat');
 	?>
+	<h1>Classification TNM 8ème édition</h1>
 	<p>T<?php echo $t;?></p>
 	<p>N<?php echo $ntm_n;?></p>
 	<p>M<?php echo $m;?></p>
+	<p><a href='/'>Retour</a></p>
 	<?php
 }
