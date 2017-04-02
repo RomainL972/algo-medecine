@@ -84,7 +84,7 @@ function index()
 	<?php
 	extract($_GET, EXTR_SKIP);
 	if (isset($t) and isset($m) and isset($n)) {
-		echo "<p>T$t</p><p>N$n</p><p>M$m</p>";
+		echo "<p id=\"result\">T$t</p><p>N$n</p><p>M$m</p>";
 	}
 	?>
 
@@ -130,5 +130,5 @@ function post()
 	$m = str_replace('.2', 'b', $m);
 	$m = str_replace('.3', 'c', $m);
 
-	redirect("/?t=$t&n=$n&m=$m");
+	redirect("/#result?t=$t&n=$n&m=$m");
 }
