@@ -25,8 +25,8 @@ function calcul() {
 	t = t.replace(".3", "c")
 
 	m = m.replace(".1", "a")
-	m = m.replace(".1", "a")
-	m = m.replace(".1", "a")
+	m = m.replace(".2", "b")
+	m = m.replace(".3", "c")
 
-	document.getElementById('result').innerHTML = "T"+t+" N"+n+" M"+m
+	document.getElementById('result').innerHTML = "<fieldset>T"+t+" N"+n+" M"+m+"</fieldset>"
 }
