@@ -1,8 +1,12 @@
-function testResult($id, $id2) {
-	var select = document.getElementById($id).value;
-	document.getElementById($id2).innerHTML = select
+function testResult(id, id2) {
+	var select = document.getElementById(id).value;
+	document.getElementById(id2).innerHTML = select
 	if (select == "Étude du réhaussement ou TEP") {
-		document.getElementById('form').innerHTML = '<form><select name="result" id="select2"><option value="TDM à 3, 9 et 24 mois">Étude du réhaussement ou TEP négatif</option><option value="Avis spécialisé(biopsie ou chirurgie)">Étude du réhaussement ou TEP positif</option></select><input type="button" value="Conduite à tenir" onclick="testResult(\'select2\', \'result2\')">';
+		document.getElementById('form').innerHTML = '<form><select name="result" id="select2"><option value="TDM à 3, 9 et 24 mois">Étude du réhaussement ou TEP négatif</option><option value="Avis spécialisé(biopsie ou chirurgie)">Étude du réhaussement ou TEP positif</option></select><p><input type="button" class="button" value="Conduite à tenir" onclick="testResult(\'select2\', \'result2\')"></p>';
+	}
+	else if (id != 'select2') {
+		document.getElementById('form').innerHTML = ''
+		document.getElementById('result2').innerHTML = ''
 	}
 }
 

@@ -4,7 +4,7 @@ a
 }
 
 .button {
-    background-color: red; /* Green */
+    background-color: red;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -14,7 +14,7 @@ a
     font-size: 16px;
 }
 
-.tumeur
+select
 {
 	background-color: white;
 }

@@ -14,7 +14,7 @@ function index()
 			<option value="Surveillance annuelle pendant cinq ans">Entre 5 et 10 mm</option>
 			<option value="Avis spécialisé pour exérèse">&#62 10mm, augmentation en taille ou apparition d’une composante tissulaire</option>
 		</select>
-		<input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')">
+		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
 	<p id="result"></p>
 	<?php

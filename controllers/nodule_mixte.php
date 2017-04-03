@@ -13,7 +13,7 @@ function index()
 			<option value="Stop">Disparition</option>
 			<option value="Avis spécialisé pour exérèse">Persistance</option>
 		</select>
-		<input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')">
+		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
 	<p id="result"></p>
 	<?php

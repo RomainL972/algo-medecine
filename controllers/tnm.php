@@ -7,7 +7,7 @@ function index()
 	<form>
 	<h2>Tumeur</h1>
 	<p>Taille : 
-		<select name="T1" id="t1" class="tumeur">
+		<select name="T1" id="t1">
 			<option value="1.1">≤ 1cm</option>
 			<option value="1.2">1cm et ≤ 2cm</option>
 			<option value="1.3">2cm et ≤ 3cm</option>
@@ -18,7 +18,7 @@ function index()
 		</select>
 	</p>
 	<p>Trachée-Bronches : 
-		<select name="T2" id="t2" class="tumeur">
+		<select name="T2" id="t2">
 			<option value="0">Pas d'atteinte</option>
 			<option value="2">Atélectasie/Pneumonie obstructive</option>
 			<option value="2">Atteinte bronchique sans atteinte de la carène</option>
@@ -26,7 +26,7 @@ function index()
 		</select>
 	</p>
 	<p>Médiastin : 
-		<select name="T3" id="t3" class="tumeur">
+		<select name="T3" id="t3">
 			<option value="0">Pas d'atteinte</option>
 			<option value="3">Paralysie phrénique</option>
 			<option value="4">Oesophage</option>
@@ -35,14 +35,14 @@ function index()
 		</select>
 	</p>
 	<p>Plèvre : 
-		<select name="T4" id="t4" class="tumeur">
+		<select name="T4" id="t4">
 			<option value="0">Pas d'atteinte</option>
 			<option value="2">Franchissement scissural</option>
 			<option value="3">Plèvre pariétale</option>
 		</select>
 	</p>
 	<p>Paroi : 
-		<select name="T5" id="t5" class="tumeur">
+		<select name="T5" id="t5">
 			<option value="0">Pas d'atteinte</option>
 			<option value="3">Plèvre pariétale/Paroi</option>
 			<option value="3">Apex</option>
@@ -50,7 +50,7 @@ function index()
 		</select>
 	</p>
 	<p>Nodules satellites : 
-		<select name="T6" id="t6" class="tumeur">
+		<select name="T6" id="t6">
 			<option value="0">Aucun</option>
 			<option value="3">Nodule(s) dans le même lobe</option>
 			<option value="4">Nodule(s) dans un autre lobe homolatéral</option>

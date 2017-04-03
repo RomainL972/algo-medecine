@@ -24,7 +24,7 @@ function index()
 			<option value="Étude du réhaussement ou TEP">entre 8 et 10 mm sans FDR</option>
 			<option value="Biopsie ou chirurgie">entre 8 et 10 mm avec FDR</option>
 		</select>
-		<input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')">
+		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
 	<script type="text/javascript"></script>
 	<p id="result"></p>
