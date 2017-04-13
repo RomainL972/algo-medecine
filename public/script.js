@@ -1,3 +1,7 @@
+$.notify.defaults({
+	autoHide:false,
+	globalPosition:'top center'
+})
 function testResult(id, id2) {
 	var select = document.getElementById(id).value;
 	document.getElementById(id2).innerHTML = select
@@ -33,4 +37,58 @@ function calcul() {
 	m = m.replace(".3", "c")
 
 	document.getElementById('result').innerHTML = "<fieldset>T"+t+" N"+n+" M"+m+"</fieldset>"
+}
+
+function recist() {
+	result = document.getElementById('somme')
+	cibles = [document.getElementById('cible1').value, document.getElementById('cible2').value, document.getElementById('cible3').value, document.getElementById('cible4').value, document.getElementById('cible5').value]
+	ciblesb = [document.getElementById('cible1b').value, document.getElementById('cible2b').value, document.getElementById('cible3b').value, document.getElementById('cible4b').value, document.getElementById('cible5b').value]
+	somme1 = somme2 = 0
+	for (var i = 0; i < cibles.length; i++) {
+		cibles[i] = cibles[i].replace('', 0)
+		cibles[i] = cibles[i].replace(',', '.')
+		ciblesb[i] = ciblesb[i].replace('', 0)
+		ciblesb[i] = ciblesb[i].replace(',', '.')
+		somme1 += Number(cibles[i])
+		somme2 += Number(ciblesb[i])
+	}
+	if (somme1 == 0) {
+		somme1 = 0
+		result.innerHTML = "<p>Résultat pour les lésions cibles : Réponse complète</p>"
+	}
+	else {
+		result.innerHTML = "<p>Somme : "+somme1+" cm. "+somme2+" cm lors de la précédente exploration</p>"
+		somme1 = (somme1 - somme2)/somme2*100
+		result.innerHTML += "<p>Evolution : "+Math.round(somme1)+"%</p>"
+		if (somme1<-30) {
+			somme1 = 1
+			result.innerHTML += "<p>Résultat pour les lésions cibles : Réponse partielle</p>"
+		}
+		else if (somme1>20) {
+			somme1 = 2
+			result.innerHTML += "<p>Résultat pour les lésions cibles : Progression</p>"
+		}
+		else {
+			somme1 = 3
+			result.innerHTML += "<p>Résultat pour les lésions cibles : Stabilité entre les deux</p>"
+		}
+	}
+	result = document.getElementById('result')
+	select = document.getElementById('select').value
+	select2 = document.getElementById('select2').value
+	if (somme1 == 0 && select == 1 && select2 == 2) {
+		result.innerHTML = "<p>Résultat global : Réponse complète"
+	}
+	else if ((somme1 == 0 || somme1 == 1) && select == 2 && select2 == 2) {
+		result.innerHTML = "<p>Résultat global : Réponse partielle"
+	}
+	else if (somme1 == 3 && select == 2 && select2 == 2) {
+		result.innerHTML = "<p>Résultat global : Maladie stable"
+	}
+	else if (somme1 == 2 || select == 3 || select2 == 1) {
+		result.innerHTML = "<p>Résultat global : Progression"
+	}
+	else {
+		$.notify('Aucun résultat possible', 'error')
+	}
 }
