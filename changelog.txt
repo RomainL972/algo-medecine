@@ -22,7 +22,7 @@ env.php:démarre la session et mets le fuseau horaire
 
 error.php: Affiche l'erreur 404
 
-Version 1.1
+Version 1.1 - Thu Apr 13 10:50:02 2017
 *Fusion des fichiers nodule_ dans le fichier nps
 +Ajout des boutons de retour à l'accueil
 -Remove /public .htaccess
