@@ -4,6 +4,7 @@ function index()
 	head('Classification TNM');
 	?>
 	<h1>Classification TNM 8ème édition</h1>
+	<p><a href="/">Retour à l'accueil</a></p>
 	<form>
 	<h2>Tumeur</h1>
 	<p>Taille : 

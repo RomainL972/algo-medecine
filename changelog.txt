@@ -1,0 +1,28 @@
+Algorithmes médecine
+
+Version 1.0 - Thu Apr 13 10:31:45 2017
+3 Algorithmes : 
+-Nodule Pulmonaire Solitaire:
+	-Nodule Solide (avec ou sans FDR)
+	-Nodule en verre dépoli (taille en mm)
+	-Nodule mixte (disparition ou persistance)
+-Classification TNM (tumeur, adénopathies, métastases)
+-RECIST (cibles 1-5 et liaisons)
+
+Les boutons de calculs sont en gros et en rouge
+
+fonctions systèmes:
+	-error($error='', $redirect='/error', $line=NULL, $file=NULL)
+	-success($message='', $redirect='/', $line=NULL, $file=NULL)
+	-redirect($to='/')
+	-head($title='Algorithmes Médecine')
+	-foot()
+
+env.php:démarre la session et mets le fuseau horaire
+
+error.php: Affiche l'erreur 404
+
+Version 1.1
+*Fusion des fichiers nodule_ dans le fichier nps
++Ajout des boutons de retour à l'accueil
+-Remove /public .htaccess

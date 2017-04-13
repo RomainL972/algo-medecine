@@ -4,6 +4,7 @@ function index()
 	head('Critères RECIST 1.1');
 	?>
 	<h1>Critères RECIST 1.1</h1>
+	<p><a href="/">Retour à l'accueil</a></p>
 	<p><strong>Lésions cibles</strong></p>
 	<p>&gt; 1 cm, maximum 2 par organe et 5 en tout, mesure des lésions dans le plus grand axe :</p>
 	<form>
