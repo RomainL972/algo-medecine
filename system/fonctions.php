@@ -33,6 +33,7 @@ function head($title='Algorithmes Médecine')
 	<title><?php echo $title;?></title>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
+	<script type="text/javascript" src="/public/OSC.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
