@@ -85,6 +85,8 @@ function index()
 	
 	<div id="result"></div>
 
+	<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/tnm'"></p>
+
 	</form>
 
 	<p>Remarques pour le radiologue :

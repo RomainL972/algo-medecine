@@ -42,6 +42,7 @@ function index()
 <div id="result2"></div>
 <div id="form2"></div>
 <div id="result3"></div>
+<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/nps/tirads'"></p>
 <p><strong>Contexte à risque :</strong><br>
 radiothérapie externe dans l’enfance<br>
 ATCD au premier degré de carcinome papillaire<br>

@@ -57,7 +57,7 @@ function recist() {
 		result.innerHTML = "<p>Résultat pour les lésions cibles : Réponse complète</p>"
 	}
 	else {
-		result.innerHTML = "<p>Somme : "+somme1+" cm. "+somme2+" cm lors de la précédente exploration</p>"
+		result.innerHTML = "<p>Somme : "+somme1+" cm<br>"+somme2+" cm lors de la précédente exploration</p>"
 		somme1 = (somme1 - somme2)/somme2*100
 		result.innerHTML += "<p>Evolution : "+Math.round(somme1)+"%</p>"
 		if (somme1<-30) {

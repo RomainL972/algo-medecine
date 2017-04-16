@@ -28,6 +28,7 @@ function nodule_mixte()
 		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
 	<p id="result"></p>
+	<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/nps/nodule_mixte'"></p>
 	<?php
 	foot();
 }
@@ -59,10 +60,10 @@ function nodule_solide()
 		</select>
 		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
-	<script type="text/javascript"></script>
 	<p id="result"></p>
 	<div id="form"></div>
 	<p id="result2"></p>
+	<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/nps/nodule_solide'"></p>
 	<?php
 	foot();
 }
@@ -85,6 +86,7 @@ function nodule_verre_depoli()
 		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
 	<p id="result"></p>
+	<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/nps/nodule_verre_depoli'"></p>
 	<?php
 	foot();
 }

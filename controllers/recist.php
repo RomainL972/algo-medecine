@@ -14,18 +14,22 @@ function index()
 		<p>Cible 4 : <input type="number" id="cible4" min="1"> cm. <input type="number" id="cible4b" min="1"> cm lors de la précédente exploration</p>
 		<p>Cible 5 : <input type="number" id="cible5" min="1"> cm. <input type="number" id="cible5b" min="1"> cm lors de la précédente exploration</p>
 		<div id="somme"></div>
+		<p></p>
 		<p><strong>Lésions non cible :</strong> 
 		<select id="select">
+			<option value="1">Néant</option>
 			<option value="1">Réponse complète</option>
 			<option value="2">Pas de progression</option>
 			<option value="3">Progression non équivoque</option>
 		</select></p>
+		<p></p>
 		<p><strong>Apparition de nouvelles lésions : </strong><select id="select2">
 			<option value="1">Oui</option>
 			<option value="2" selected>Non</option>
 		</select></p>
-		<div id="result"></div>
 		<p><input type="button" value="Résultat" onclick="recist()" class="button"></p>
+		<div id="result"></div>
+		<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/recist'"></p>
 	</form>
 	<?php
 }
