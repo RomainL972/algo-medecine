@@ -7,7 +7,6 @@ function index()
 	<p><a href="/nps/nodule_solide">Nodule Solide</a></p>
 	<p><a href="/nps/nodule_verre_depoli">Nodule en verre dépoli</a></p>
 	<p><a href="/nps/nodule_mixte">Nodule mixte (verre dépoli + composante tissulaire)</a></p>
-	<p><a href="/">Retour à l'accueil</p>
 	<?php
 }
 
@@ -40,7 +39,7 @@ function nodule_solide()
 	<h1>Nodule Solide</h1>
 	<p><a href="/nps">Retour</a></p>
 	<p>Algorithmes de surveillance : selon la taille du nodule lors du diagnostic et les FDR ; puis mesure du volume par un logiciel dédié, seuil d’augmentation significative de volume : 30% = avis spécialisé.</p>
-	<h2>Facteur De Risque (FDR) = </h2>
+	<h3>Facteur De Risque (FDR) = </h3>
 	<ul>
 		<li>Tabagisme</li>
 		<li>Age</li>

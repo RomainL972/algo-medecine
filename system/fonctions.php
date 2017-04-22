@@ -35,9 +35,11 @@ function head($title='Algorithmes Médecine')
 	<script type="text/javascript" src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
 	<script type="text/javascript" src="/public/OSC.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/style.css">
+	<link rel="icon" type="image/png" href="/public/logo.png">
 </head>
 <body>
 	<script type="text/javascript" src="/public/script.js"></script>
+	<a href="/" class="float"><img src="/public/logo.png" alt="logo"></a>
 	<?php
 	if (isset($_SESSION['error']) and $_SESSION['error']) {
 		?>

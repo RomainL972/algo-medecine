@@ -4,7 +4,6 @@ function index()
 	head('TIRADS 2017');
 	?>
 <h1>TIRADS 2017</h1>
-<p><a href="/">Accueil</a></p>
 <form>
 	<p>Composition : <select id="compo">
 		<option value="0">kystique 0</option>

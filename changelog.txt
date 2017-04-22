@@ -40,3 +40,8 @@ Version 1.2.1 - Sun Apr 16 18:32:20 2017
 -Suppression d'un <script> inutile
 +Ajouts de boutons reset
 *Corrections celon les directives
+
+Version 1.2.2
++Ajout d'un logo
+-Suppression des boutons retour à l'accueil
++Ajout de style
