@@ -46,7 +46,7 @@ Version 1.2.2 - Sat Apr 22 13:50:24 2017
 -Suppression des boutons retour à l'accueil
 +Ajout de style
 
-Version 1.2.3
+Version 1.2.3 - Sat Apr 22 21:42:54 2017
 +Ajout de PIRADS
 +Ajout de pirads(number, select_name, result_name)
 +Ajout de la classe .button2 pour des "demi-boutons"
