@@ -41,7 +41,14 @@ Version 1.2.1 - Sun Apr 16 18:32:20 2017
 +Ajouts de boutons reset
 *Corrections celon les directives
 
-Version 1.2.2
-+Ajout d'un logo
+Version 1.2.2 - Sat Apr 22 13:50:24 2017
++Ajout d'un logo flottant à droite
 -Suppression des boutons retour à l'accueil
 +Ajout de style
+
+Version 1.2.3
++Ajout de PIRADS
++Ajout de pirads(number, select_name, result_name)
++Ajout de la classe .button2 pour des "demi-boutons"
+*Changements des majuscules
++Ajout de <fieldset> autour des résultats

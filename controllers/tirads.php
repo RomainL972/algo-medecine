@@ -55,4 +55,5 @@ Type 2 : vascularisation périphérique<br>
 Type 3 : vascularisation périphérique et interne<br>
 Type 4 : vascularisation interne prédominante</p>
 	<?php
+	foot();
 }

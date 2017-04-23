@@ -14,6 +14,17 @@ a
     font-size: 16px;
 }
 
+.button2 {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 select
 {
 	background-color: white;

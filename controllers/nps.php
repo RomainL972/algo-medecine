@@ -8,6 +8,7 @@ function index()
 	<p><a href="/nps/nodule_verre_depoli">Nodule en verre dépoli</a></p>
 	<p><a href="/nps/nodule_mixte">Nodule mixte (verre dépoli + composante tissulaire)</a></p>
 	<?php
+	foot();
 }
 
 function nodule_mixte()
@@ -59,9 +60,9 @@ function nodule_solide()
 		</select>
 		<p><input type="button" value="Conduite à tenir" onclick="testResult('select', 'result')" class="button"></p>
 	</form>
-	<p id="result"></p>
+	<div id="result"></div>
 	<div id="form"></div>
-	<p id="result2"></p>
+	<div id="result2"></div>
 	<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/nps/nodule_solide'"></p>
 	<?php
 	foot();

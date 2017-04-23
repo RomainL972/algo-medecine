@@ -13,7 +13,7 @@ function index()
 			<option value="1.3">2cm et ≤ 3cm</option>
 			<option value="2.1">3cm et ≤ 4cm</option>
 			<option value="2.2">4cm et ≤ 5cm</option>
-			<option value="3.3">5cm et ≤ 7cm</option>
+			<option value="3">5cm et ≤ 7cm</option>
 			<option value="4">7cm</option>
 		</select>
 	</p>

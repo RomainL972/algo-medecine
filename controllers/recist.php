@@ -31,4 +31,5 @@ function index()
 		<p><input type="button" value="Réinitialiser" onclick="document.location.href ='/recist'"></p>
 	</form>
 	<?php
+	foot();
 }
